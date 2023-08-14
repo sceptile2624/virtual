@@ -1,5 +1,5 @@
 <?php
-include('conexion.php');
+include('../conexion.php');
 
     $nombre = $_POST['nombre_usuario'];
     $apellidos = $_POST['apellidos_usuario'];
@@ -15,7 +15,7 @@ include('conexion.php');
     $query = "INSERT INTO usuarios (nombre, apellidos, email, pass, sexo, telefono, es_admin) VALUES ('$nombre', '$apellidos', '$correo', '$contrasena', '$sexo', '$telefono', '$es_admin')";
 
     if(mysqli_query($conn, $query)){
-        header("Location: index.html");
+        header("Location: ../index.html");
     } else{
         echo "Error: " . $query . "<br>" . mysqli_error($conn);
     }

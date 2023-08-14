@@ -4,7 +4,7 @@
 session_start();
 
 // Incluimos la clase de conexión
-include('conexion.php');
+include('../conexion.php');
 
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
