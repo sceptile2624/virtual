@@ -1,5 +1,7 @@
 <?php
-include('../conexion.php');
+    include('conexion.php');
+    
+    echo "Hola mundo";
 
     $nombre = $_POST['nombre_usuario'];
     $apellidos = $_POST['apellidos_usuario'];
